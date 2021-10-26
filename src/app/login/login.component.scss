@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.body{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+	background-color: #1A237E;
+	background-size: cover;
+	//-webkit-filter: blur(5px);
+	z-index: 0;
+	opacity: 2.8;
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+  :host {
+	display: flex;
+	justify-content: center;
+	
+  }
+
+  .logo {
+      position: relative;
+  }
+
+  .mat-form-field {
+	width: 100%;
+	min-width: 300px;
+  }
+
+  mat-card-title {
+	text-align: center;
+	  color: #1A237E;
+  }
+  mat-card-content {
+	display: flex;
+	justify-content: center;
+	width: 350px;
+  }
+
+  .mat-button {
+	text-align: center;
+	background: #1A237E;
+	color: white;
+	margin-bottom: 5px;
+	justify-items: center;
+  }
+  .text-cadastro {
+	  text-align: center;
+  }
+
+  .text-cadastro a {
+	  color: #1A237E;
+	  cursor: pointer;
+  }
