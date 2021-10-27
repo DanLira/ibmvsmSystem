@@ -48,9 +48,12 @@ export class CadMembroComponent implements OnInit {
     this.formsRegister = new FormGroup({
         id: new FormControl(null),
         Name: new FormControl('', Validators.required),
-        idade: new FormControl('', Validators.required),
+        dataNascimento: new FormControl('', Validators.required),
         sexo: new FormControl('', Validators.required),
         endereco: new FormControl('', Validators.required),
+        numero: new FormControl('', Validators.required),
+        bairro: new FormControl('', Validators.required),
+        telefone: new FormControl('', Validators.required),
         flagAtivo: new FormControl(false),
         status: new FormControl('')
      });
@@ -63,7 +66,10 @@ export class CadMembroComponent implements OnInit {
       Name: this.formsRegister.get('Name')!.value,
       dataNascimento: (this.formsRegister.get('dataNascimento')!.value).toLocaleDateString('pt-BR'),
       sexo: this.formsRegister.get('sexo')!.value,
-      endereco: this.formsRegister.get('sexo')!.value,
+      endereco: this.formsRegister.get('endereco')!.value,
+      numero: this.formsRegister.get('numero')!.value,
+      bairro: this.formsRegister.get('bairro')!.value,
+      telefone: this.formsRegister.get('telefone')!.value,
       status: this.formsRegister.get('flagAtivo')!.value ? 'I' : 'A'
     };
     if (this.formsRegister.value.id) {

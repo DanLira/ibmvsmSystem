@@ -70,6 +70,7 @@ export class UserComponent implements OnInit {
             this.usuarioList = (!!usuarios) ? usuarios : [];
             this.dataSource.data = [...this.usuarioList];
             this.toastr.success('Usuário editado com sucesso!', 'Editar');
+            this.formsRegister.reset();
           });
         });
     } else {
@@ -78,7 +79,7 @@ export class UserComponent implements OnInit {
             this.usuarioList = (!!usuarios) ? usuarios : [];
             this.dataSource.data = [...this.usuarioList];
             this.toastr.success('Usuário salvo com sucesso!', 'Salvar');
-            this.limpar();
+            this.formsRegister.reset();
           });
         });
     }

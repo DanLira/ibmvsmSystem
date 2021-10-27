@@ -5,6 +5,9 @@ export interface Membro {
     dataNascimento: string;
     sexo: string;
     endereco: string;
+    numero: number;
+    bairro: string;
+    telefone: string;
     flagAtivo?: boolean;
     status?: string;
 }

@@ -17,7 +17,7 @@ const routes: Routes = [
 {
     path: 'home',
     component: HomeComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
 },
 
 {
@@ -33,11 +33,13 @@ const routes: Routes = [
 
 {
   path: 'usuario',
-  component: UserComponent
+  component: UserComponent,
+  canActivate: [AuthGuard]
 },
 {
   path: 'membro',
-  component: CadMembroComponent
+  component: CadMembroComponent,
+  canActivate: [AuthGuard]
 },
 ];
 

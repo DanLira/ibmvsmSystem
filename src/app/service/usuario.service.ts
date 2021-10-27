@@ -26,8 +26,7 @@ export class UsuarioService {
        return this._HTTP.post<Usuarios>(this.apiUrl + '/users', usuario, this.httpOptions);
    }
    editUsuario(usuario: Usuarios): Observable<any> {
-
-     return this._HTTP.put(this.apiUrl + '/users' , usuario, this.httpOptions);
+     return this._HTTP.put(this.apiUrl + '/users/'+ usuario.id , usuario, this.httpOptions);
    }
    deleteUsuario(id: string): Observable<any> {
        return this._HTTP.delete(this.apiUrl + '/users/' + id, this.httpOptions);

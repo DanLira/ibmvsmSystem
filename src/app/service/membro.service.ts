@@ -8,7 +8,7 @@ import { Membro } from '../models/cadMembro.model';
 })
 export class MembroService {
 
-  readonly apiUrl = 'http://127.0.0.1:5000';
+  readonly apiUrl = 'http://localhost:5001/v1';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -27,7 +27,7 @@ export class MembroService {
    }
    editMembro(membro: Membro): Observable<any> {
 
-     return this._HTTP.put(this.apiUrl + '/membro' , membro, this.httpOptions);
+     return this._HTTP.put(this.apiUrl + '/membro/' + membro.id, membro, this.httpOptions);
    }
    deleteMembro(id: string): Observable<any> {
        return this._HTTP.delete(this.apiUrl + '/membro/' + id, this.httpOptions);

@@ -30,7 +30,30 @@
                   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                   <mat-datepicker #picker></mat-datepicker>          
                 </mat-form-field>
+
+                <mat-form-field class="col-3">
+                  <mat-label>Endereço</mat-label>
+                  <input matInput placeholder="Endereço"
+                  formControlName="endereco" value={{formsRegister.value.endereco}}>
+                </mat-form-field>
+
+                <mat-form-field class="col-2">
+                  <mat-label>Número</mat-label>
+                  <input matInput placeholder="Número"
+                  formControlName="numero" value={{formsRegister.value.numero}}>
+                </mat-form-field>
+
+                <mat-form-field class="col-3">
+                  <mat-label>Bairro</mat-label>
+                  <input matInput placeholder="Bairro"
+                  formControlName="bairro" value={{formsRegister.value.bairro}}>
+                </mat-form-field>
                 
+                <mat-form-field class="col-3">
+                  <mat-label>Telefone</mat-label>
+                  <input matInput placeholder="Telefone" 
+                  formControlName="telefone" value={{formsRegister.value.telefone}} >
+                </mat-form-field>
 
                 <div class="col-xs-12">
                   <mat-slide-toggle formControlName="flagAtivo" class="col-xs-12 col-md-2">Inativo

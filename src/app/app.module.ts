@@ -19,7 +19,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
@@ -69,7 +69,8 @@ import { CadMembroComponent } from './cadMembro/cadMembro.component';
     LayoutModule,
     MatDialogModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatNativeDateModule,
   ],
   providers: [AuthGuard, AuthService, MatDatepickerModule,
     {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'}, ],
