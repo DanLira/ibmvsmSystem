@@ -4,9 +4,10 @@ export interface Membro {
     Name: string;
     dataNascimento: string;
     sexo: string;
-    endereco: string;
+    rua: string;
     numero: number;
     bairro: string;
+    cidade: string;
     telefone: string;
     flagAtivo?: boolean;
     status?: string;

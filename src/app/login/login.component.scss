@@ -30,6 +30,12 @@ body{
 	box-sizing: border-box;
   }
 
+  .content {
+	margin-top: -70px;
+	display: flex;
+	justify-content: center;
+  }
+
   :host {
 	display: flex;
 	justify-content: center;
@@ -47,9 +53,10 @@ body{
 
   mat-card-title {
 	text-align: center;
-	  color: #1A237E;
+	color: #1A237E;
   }
   mat-card-content {
+	margin-top: -10px;
 	display: flex;
 	justify-content: center;
 	width: 350px;
@@ -70,3 +77,16 @@ body{
 	  color: #1A237E;
 	  cursor: pointer;
   }
+
+  form {
+	margin-top: 90px !important;
+  }
+
+  h1{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1A237E;
+	margin-top: -40px;
+
+}

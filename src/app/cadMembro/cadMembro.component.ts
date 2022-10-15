@@ -50,9 +50,10 @@ export class CadMembroComponent implements OnInit {
         Name: new FormControl('', Validators.required),
         dataNascimento: new FormControl('', Validators.required),
         sexo: new FormControl('', Validators.required),
-        endereco: new FormControl('', Validators.required),
+        rua: new FormControl('', Validators.required),
         numero: new FormControl('', Validators.required),
         bairro: new FormControl('', Validators.required),
+        cidade: new FormControl('', Validators.required),
         telefone: new FormControl('', Validators.required),
         flagAtivo: new FormControl(false),
         status: new FormControl('')
@@ -66,9 +67,10 @@ export class CadMembroComponent implements OnInit {
       Name: this.formsRegister.get('Name')!.value,
       dataNascimento: (this.formsRegister.get('dataNascimento')!.value).toLocaleDateString('pt-BR'),
       sexo: this.formsRegister.get('sexo')!.value,
-      endereco: this.formsRegister.get('endereco')!.value,
+      rua: this.formsRegister.get('rua')!.value,
       numero: this.formsRegister.get('numero')!.value,
       bairro: this.formsRegister.get('bairro')!.value,
+      cidade: this.formsRegister.get('cidade')!.value,
       telefone: this.formsRegister.get('telefone')!.value,
       status: this.formsRegister.get('flagAtivo')!.value ? 'I' : 'A'
     };
@@ -118,7 +120,7 @@ export class CadMembroComponent implements OnInit {
     this.formsRegister.get('Name')!.setValue(value.Name);
     this.formsRegister.get('dataNascimento')!.setValue(new Date (this.formatDate(value.dataNascimento)));
     this.formsRegister.get('sexo')!.setValue(value.sexo);
-    this.formsRegister.get('endereco')!.setValue(value.endereco);
+    this.formsRegister.get('rua')!.setValue(value.rua);
     this.formsRegister.get('flagAtivo')!.setValue(value.status === 'A' ? false : true );
 
   }
