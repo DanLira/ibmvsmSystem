@@ -68,6 +68,10 @@ $break-exlarge: 1140px;
   color:#fff;
 }
 
+.mat-drawer-content{
+  overflow-x: hidden !important;
+}
+
 .btn-nav{
   padding: 5px;
   background-color: #fff !important;
@@ -244,7 +248,7 @@ table {
   background-color: #1A237E !important;
 }
 .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
-  background-color: #1A237E;
+  background-color: #1565C0;
 }
 
 .btn-limpar {

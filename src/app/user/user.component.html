@@ -15,17 +15,16 @@
                   formControlName="userName" value={{formsRegister.value.userName}} >
                 </mat-form-field>
 
-                <mat-form-field class="col-sm-4 col-xs-12">
+                <mat-form-field class="col-sm-4 col-xs-6">
                   <input matInput  placeholder="Senha" formControlName="senha" [type]="hide ? 'text' : 'password'">
                   <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                   <mat-icon>{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
                   </button>
                 </mat-form-field>
 
-                <div class="col-xs-12">
                   <mat-slide-toggle formControlName="flagAtivo" class="col-xs-12 col-md-2">Inativo
                   </mat-slide-toggle>
-                </div>
+                
 
             </form>
           </div>

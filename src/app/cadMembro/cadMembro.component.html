@@ -15,6 +15,12 @@
                   formControlName="Name" value={{formsRegister.value.Name}} >
                 </mat-form-field>
 
+                <mat-form-field class="col-sm-3 col-xs-12">
+                  <mat-label>Cargo</mat-label>
+                  <input matInput placeholder="Cargo"
+                  formControlName="cargo" value={{formsRegister.value.cargo}} >
+                </mat-form-field>
+
                 <mat-form-field class="col-2">
                   <mat-label>Sexo</mat-label>
                       <mat-select matNativeControl required formControlName="sexo" value={{formsRegister.value.sexo}}>
@@ -26,7 +32,7 @@
 
                  <mat-form-field class="col-3">
                   <input matInput readonly [matDatepicker]="picker" placeholder="Data de nascimento"
-                   formControlName="dataNascimento" value={{formsRegister.value.DataNascimento}}>
+                  required formControlName="dataNascimento" value={{formsRegister.value.DataNascimento}}>
                   <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                   <mat-datepicker #picker></mat-datepicker>          
                 </mat-form-field>

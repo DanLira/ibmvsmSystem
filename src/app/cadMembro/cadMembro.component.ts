@@ -48,6 +48,7 @@ export class CadMembroComponent implements OnInit {
     this.formsRegister = new FormGroup({
         id: new FormControl(null),
         Name: new FormControl('', Validators.required),
+        cargo: new FormControl(''),
         dataNascimento: new FormControl('', Validators.required),
         sexo: new FormControl('', Validators.required),
         rua: new FormControl('', Validators.required),

@@ -28,7 +28,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthService } from './guards/auth.service';
@@ -40,7 +39,6 @@ import { CadMembroComponent } from './cadMembro/cadMembro.component';
     LoginComponent,
     HomeComponent,
     UserComponent,
-    DashboardComponent,
     CadMembroComponent
    ],
   imports: [

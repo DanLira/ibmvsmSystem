@@ -1,7 +1,7 @@
 export interface Membro {
     id?: number;
-    cargo?: string;
     Name: string;
+    cargo?: string;
     dataNascimento: string;
     sexo: string;
     rua: string;

@@ -14,7 +14,7 @@
 	<form [formGroup]="loginForm">
 		<h1>.::Login::.</h1>
 		<mat-divider></mat-divider>
-		
+	<div class="formulario">
 	  <p>
 		<mat-form-field>
 		  <input type="text" matInput placeholder="Usuário" required formControlName="userName">
@@ -32,6 +32,7 @@
 	  <div class="row">
 		<button mat-button class="btn-entrar col-12" type="submit" (click)="fazerLogin()"><mat-icon>input</mat-icon> Entrar</button>
 	  </div>
+	</div>
 	 
 	</form>
   </mat-card-content>
